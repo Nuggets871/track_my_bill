@@ -22,12 +22,15 @@ coverage/
 # Laravel (PHP)
 ####################################
 /vendor/
-/storage/*.key
-/storage/logs/
-/storage/framework/cache/
-/storage/framework/sessions/
-/storage/framework/views/
-/bootstrap/cache/
+
+/storage/*
+!/storage/app/
+!/storage/app/public/
+!/storage/framework/
+!/storage/framework/.gitignore
+
+/bootstrap/cache/*
+!/bootstrap/cache/.gitignore
 
 .env
 .env.*
