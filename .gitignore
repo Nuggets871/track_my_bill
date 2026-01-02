@@ -1,5 +1,5 @@
 ####################################
-# Node / NPM / Yarn / PNPM
+# Node / NPM / Yarn / PNPM (Angular)
 ####################################
 node_modules/
 npm-debug.log*
@@ -19,27 +19,30 @@ coverage/
 *.log
 
 ####################################
-# NestJS
+# Laravel (PHP)
 ####################################
-dist/
-build/
-coverage/
+/vendor/
+/storage/*.key
+/storage/logs/
+/storage/framework/cache/
+/storage/framework/sessions/
+/storage/framework/views/
+/bootstrap/cache/
+
 .env
 .env.*
 !.env.example
 
 ####################################
-# Prisma
+# Composer
 ####################################
-prisma/dev.db
-prisma/dev.db-journal
-prisma/*.db
-prisma/*.db-journal
+composer.phar
+composer.lock
 
 ####################################
-# TypeScript
+# PHP
 ####################################
-*.tsbuildinfo
+.phpunit.result.cache
 
 ####################################
 # IDE / Editors
@@ -57,7 +60,7 @@ prisma/*.db-journal
 Thumbs.db
 
 ####################################
-# Tests
+# Tests / Reports
 ####################################
 coverage/
 reports/
